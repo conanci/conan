@@ -16,7 +16,7 @@ passenv = *
 deps = -rconans/requirements.txt
        -rconans/requirements_dev.txt
        -rconans/requirements_server.txt
-commands=nosetests {posargs: conans/test}  --verbosity=3 --processes=4 --process-timeout=1000
+commands=nosetests {posargs: conans/test/server/authenticator_plugin_test.py}  --verbosity=3 --processes=4 --process-timeout=1000
 """
 
     tox_win = """ 
